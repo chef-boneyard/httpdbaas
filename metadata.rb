@@ -4,6 +4,6 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures httpdbaas'
 long_description 'Installs/Configures httpdbaas'
-version '1.0.5'
+version '1.0.10'
 
 depends 'apt'
