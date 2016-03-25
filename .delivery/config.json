@@ -4,7 +4,16 @@
     "name": "build-cookbook",
     "path": ".delivery/build-cookbook"
   },
-  "skip_phases": [],
-  "build_nodes": {},
-  "dependencies": []
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true,
+      "supermarket": "https://cad-supermarket"
+    }
+  },
+  "skip_phases": [
+  "quality",
+  "security",
+  "smoke"
+  ],
+  "build_nodes": {}
 }
