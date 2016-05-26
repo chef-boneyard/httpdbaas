@@ -4,10 +4,13 @@
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
-include_recipe 'apt'
+include_recipe 'yum'
 
-package 'apache2'
+package 'Install httpd' do
+  package_name 'httpd'
+  action :install
+end
 
-service 'apache2' do
+service 'httpd' do
   action [:start, :enable]
 end
